@@ -25,3 +25,12 @@ files.forEach((file) => {
 
 console.log(`Environment variable: ${process.env.SECRET_KEY}`);
 
+// TODO: Add more examples of Jest testing
+// Mocking APIs or DB calls with jest.mock()
+
+// Snapshot testing (good for JSON output)
+
+// Testing async functions using async/await
+
+// Test setup/teardown with beforeEach, afterAll, etc.
+

@@ -5,7 +5,10 @@
   "main": "javascript.js",
   "scripts": {
     "start": "node javascript.js",
-    "test": "echo \"No tests yet\" && exit 0"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:verbose": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -14,11 +17,17 @@
   "author": "Sakusan Puwanendran",
   "license": "ISC",
   "type": "module",
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
   "bugs": {
     "url": "https://github.com/sakusanpuwan/node.js/issues"
   },
   "homepage": "https://github.com/sakusanpuwan/node.js#readme",
   "dependencies": {
-    "dotenv": "^16.5.0"
+    "dotenv": "^16.5.0",
+    "jest": "^29.7.0"
   }
 }
