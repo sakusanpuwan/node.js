@@ -90,6 +90,7 @@ npm (Node Package Manager) is the default package manager for Node.js. It allows
 
 `npm` - Shows list of available commands.
 `npm init` - Initializes a new Node.js project and creates a package.json file. 
+`npm init -y` - Initializes a new Node.js project with default settings and creates a package.json file.
 `npm install` - Installs all packages from package-lock.json.
 `npm install <package-name>` - Installs a specific package and adds it to the dependencies in package.json.
 
@@ -110,6 +111,8 @@ npm (Node Package Manager) is the default package manager for Node.js. It allows
   "devDependencies": {}
 }
 ```
+
+where `index.js` is the entry point of the application. The `scripts` section allows you to define custom commands that can be run using `npm run <script-name>`. For example, `npm run start` will execute the command defined in the `start` script.
 
 ## package-lock.json
 - A JSON file that contains the exact version of each installed package and its dependencies.

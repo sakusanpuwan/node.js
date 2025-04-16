@@ -4,7 +4,7 @@
   "description": "test node.js project",
   "main": "javascript.js",
   "scripts": {
-    "start" : "node javascript.js",
+    "start": "node javascript.js",
     "test": "echo \"No tests yet\" && exit 0"
   },
   "repository": {
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/sakusanpuwan/node.js/issues"
   },
-  "homepage": "https://github.com/sakusanpuwan/node.js#readme"
+  "homepage": "https://github.com/sakusanpuwan/node.js#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
 }
