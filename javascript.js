@@ -1,8 +1,14 @@
 import { PI, add, multiply } from './math.js';
 import constants from './constants.js';
 import fs from 'fs';
-import 'dotenv/config';
+import dotenv from 'dotenv';
 
+
+const result = dotenv.config();
+if (result.error) {
+  console.error("⚠️ Could not load .env file", result.error);
+  process.exit(1);
+}
 
 console.log(`The value of PI is ${PI}`); // The value of PI is 3.14159
 console.log(`2 + 3 = ${add(2, 3)}`); // 2 + 3 = 5
