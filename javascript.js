@@ -2,6 +2,7 @@ import { PI, add, multiply } from './math.js';
 import constants from './constants.js';
 import fs from 'fs';
 import dotenv from 'dotenv';
+import {readFileAsync} from './reader.js';
 
 
 const result = dotenv.config();
@@ -30,6 +31,10 @@ files.forEach((file) => {
 });
 
 console.log(`Environment variable: ${process.env.SECRET_KEY}`);
+
+const data = await readFileAsync("./data/Phases.csv");
+console.table(data.split("\n").map((line) => line.split(",")));
+
 
 // TODO: Add more examples of Jest testing
 // Mocking APIs or DB calls with jest.mock()

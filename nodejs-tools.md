@@ -9,12 +9,21 @@ SECRET_KEY = "qwerty"
 ```
 
 ```js
-import 'dotenv/config';
+import dotenv from 'dotenv';
+
+
+const result = dotenv.config();
+if (result.error) {
+  console.error("⚠️ Could not load .env file", result.error);
+  process.exit(1);
+}
 
 console.log(`Environment variable: ${process.env.SECRET_KEY}`);
 ```
 
 **NOTE** - The .env file should not be committed to version control (e.g., Git) as it may contain sensitive information. It is recommended to add the .env file to the `.gitignore` file to prevent it from being tracked by Git. 
+
+Explicit `dotenv.config()` calls ensure your .env loads at runtime, from the filesystem, not from inside the binary. This is important for security and flexibility, especially in production environments where you may not want to expose sensitive information in your codebase.
 
 ## nodemon
 `npm install nodemon --save-dev` - Installs the nodemon package as a development dependency in the package.json file.

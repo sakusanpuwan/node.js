@@ -1,0 +1,36 @@
+﻿movie_id,movie_name,release_date,movie_duration,director,writer,producer,status,phase_id
+1,Iron Man,5/2/2008,126,Jon Favreau,Mark Fergus & Hawk Ostby and Art Marcum & Matt Holloway,Avi Arad and Kevin Feige,Released,1
+2,The Incredible Hulk,6/13/2008,112,Louis Leterrier,Zak Penn,"Avi Arad, Gale Anne Hurd, and Kevin Feige",Released,1
+3,Iron Man 2,5/7/2010,124,Jon Favreau,Justin Theroux,Kevin Feige,Released,1
+4,Thor,5/6/2011,113,Kenneth Branagh,Ashley Edward Miller & Zack Stentz and Don Payne,Kevin Feige,Released,1
+5,Captain America: The First Avenger,7/22/2011,124,Joe Johnston,Christopher Markus & Stephen McFeely,Kevin Feige,Released,1
+6,The Avengers,5/4/2012,143,Joss Whedon,Joss Whedon,Kevin Feige,Released,1
+7,Iron Man 3,5/3/2013,130,Shane Black,Drew Pearce and Shane Black,Kevin Feige,Released,2
+8,Thor: The Dark World,11/8/2013,111,Alan Taylor,Christopher L. Yost and Christopher Markus & Stephen McFeely,Kevin Feige,Released,2
+9,Captain America: The Winter Soldier,4/4/2014,135,Anthony and Joe Russo,Christopher Markus & Stephen McFeely,Kevin Feige,Released,2
+10,Guardians of the Galaxy,8/1/2014,121,James Gunn,James Gunn and Nicole Perlman,Kevin Feige,Released,2
+11,Avengers: Age of Ultron,5/1/2015,141,Joss Whedon,Joss Whedon,Kevin Feige,Released,2
+12,Ant-Man,7/17/2015,117,Peyton Reed,Edgar Wright & Joe Cornish and Adam McKay & Paul Rudd,Kevin Feige,Released,2
+13,Captain America: Civil War,5/6/2016,146,Anthony and Joe Russo,Christopher Markus & Stephen McFeely,Kevin Feige,Released,3
+14,Doctor Strange,11/4/2016,115,Scott Derrickson,Jon Spaihts and Scott Derrickson & C. Robert Cargill,Kevin Feige,Released,3
+15,Guardians of the Galaxy Vol. 2,5/5/2017,135,James Gunn,James Gunn,Kevin Feige,Released,3
+16,Spider-Man: Homecoming,7/7/2017,133,Jon Watts,Jonathan Goldstein & John Francis Daley and Jon Watts & Christopher Ford and Chris McKenna & Erik Sommers,Kevin Feige and Amy Pascal,Released,3
+17,Thor: Ragnarok,11/3/2017,130,Taika Waititi,Eric Pearson and Craig Kyle & Christopher L. Yost,Kevin Feige,Released,3
+18,Black Panther,2/16/2018,134,Ryan Coogler,Ryan Coogler & Joe Robert Cole,Kevin Feige,Released,3
+19,Avengers: Infinity War,4/27/2018,149,Anthony and Joe Russo,Christopher Markus & Stephen McFeely,Kevin Feige,Released,3
+20,Ant-Man and the Wasp,7/6/2018,118,Peyton Reed,Chris McKenna & Erik Sommers and Paul Rudd & Andrew Barrer & Gabriel Ferrari,Kevin Feige and Stephen Broussard,Released,3
+21,Captain Marvel,3/8/2019,124,Anna Boden & Ryan Fleck,Anna Boden & Ryan Fleck & Geneva Robertson-Dworet,Kevin Feige,Released,3
+22,Avengers: Endgame,4/26/2019,181,Anthony and Joe Russo,Christopher Markus & Stephen McFeely,Kevin Feige,Released,3
+23,Spider-Man: Far From Home,7/2/2019,129,Jon Watts,Chris McKenna & Erik Sommers,Kevin Feige and Amy Pascal,Released,3
+24,Black Widow,7/9/2021,133,Cate Shortland,Eric Pearson,Kevin Feige,Released,4
+25,Shang-Chi and the Legend of the Ten Rings,9/3/2021,133,Destin Daniel Cretton,Dave Callaham & Destin Daniel Cretton & Andrew Lanham,Kevin Feige and Jonathan Schwartz,Released,4
+26,Eternals,11/5/2021,157,Chloé Zhao,Chloé Zhao and Chloé Zhao & Patrick Burleigh and Ryan Firpo & Kaz Firpo,Kevin Feige and Nate Moore,Released,4
+27,Spider-Man: No Way Home,12/17/2021,148,Jon Watts,Chris McKenna & Erik Sommers,Kevin Feige and Amy Pascal,Released,4
+28,Doctor Strange in the Multiverse of Madness,5/6/2022,126,Sam Raimi,Michael Waldron,Kevin Feige,Released,4
+29,Thor: Love and Thunder,7/8/2022,119,Taika Waititi,Taika Waititi & Jennifer Kaytin Robinson,Kevin Feige and Brad Winderbaum,Released,4
+30,Black Panther: Wakanda Forever,11/11/2022,161,Ryan Coogler,Ryan Coogler & Joe Robert Cole,Kevin Feige and Nate Moore,Released,4
+31,Ant-Man and the Wasp: Quantumania,2/17/2023,124,Peyton Reed,Jeff Loveness,Kevin Feige and Stephen Broussard,Released,5
+32,Guardians of the Galaxy Vol. 3,5/5/2023,150,James Gunn,Kevin Feige,Kevin Feige,Released,5
+33,The Marvels,11/10/2023,105,Nia DaCosta,Nia DaCosta and Megan McDonnell and Elissa Karasik,Kevin Feige,Released,5
+34,Deadpool & Wolverine,7/26/2024,127,Shawn Levy,Ryan Reynolds & Rhett Reese & Paul Wernick & Zeb Wells & Shawn Levy,"Kevin Feige, Lauren Shuler Donner, Ryan Reynolds, and Shawn Levy",Released,5
+35,Captain America: Brave New World,2/14/2025,118,Julius Onah,Rob Edwards and Malcolm Spellman & Dalan Musson and Julius Onah & Peter Glanz,Kevin Feige and Nate Moore,Released,5
