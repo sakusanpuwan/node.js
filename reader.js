@@ -1,4 +1,4 @@
-import { readFile , readFileSync , open , read , close , promises} from "fs";
+import { readFile , readFileSync , open , read , close , promises, createReadStream} from "fs";
 import { promisify } from "util";
 
 // Asynchronous function to read a file using async/await
@@ -10,9 +10,24 @@ export const readFileAsync = async(filePath) => {
     console.error("Error reading file:", error.message);
     throw error; // rethrow the error for further handling if needed
   }
-}
+};
 
-
+// Synchronous function to read a file via streaming
+// This function reads a file in chunks and processes each chunk as it is read
+export const readFileStream = (filePath) => {
+  try {
+    const stream = createReadStream(filePath, { encoding: "utf8" });
+    stream.on("data", (chunk) => {
+      stream.pause(); // Pause the stream to process the chunk
+      console.table(chunk.split("\n").map((line) => line.split(",")));
+      setTimeout(() => {
+        stream.resume(); // Resume the stream after processing the chunk
+      }, 1000); // Simulate async processing with a timeout
+    });
+  } catch (error) {
+    console.error("Error reading file:", error.message);
+  }
+};
 
 
 // -----------------------------------------------------------
@@ -25,6 +40,7 @@ export function readFileUsingCallbacks(filePath) {
       return;
     }
     console.table(data.split("\n").map((line) => line.split(",")));
+    return data;
   });
 }
 

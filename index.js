@@ -3,6 +3,7 @@ import constants from './constants.js';
 import fs from 'fs';
 import dotenv from 'dotenv';
 import {readFileAsync} from './reader.js';
+import database from './database.js';
 
 
 const result = dotenv.config();
@@ -45,3 +46,26 @@ console.table(data.split("\n").map((line) => line.split(",")));
 
 // Test setup/teardown with beforeEach, afterAll, etc.
 
+await database.initialiseDatabaseConnection();
+// READ
+const filmData = await database.getRows("films");
+
+console.table(filmData);
+const secondFilmName = filmData[1][1];
+console.log(`The second film name is ${secondFilmName}`);
+
+const filteredFilmData = await database.getRows("films", "DURATION > 120");
+console.table(filteredFilmData);
+
+// CREATE
+const newFilm = {
+    "TITLE" : "The Nice Guys",
+    "DURATION" : 145,
+    "RATING" : "12A"
+};
+const insertResult = await database.insertRow("FILMS", newFilm);
+
+// DELETE
+const deleteResult = await database.deleteRows("FILMS", "TITLE = 'The Nice Guys'");
+
+await database.closeDatabaseConnection();
