@@ -106,7 +106,7 @@ const closeDatabaseConnection = async () => {
   }
 };
 
-const database = {
+const oracle = {
   connect,
   initialiseDatabaseConnection,
   getRows,
@@ -115,4 +115,4 @@ const database = {
   deleteRows,
 };
 
-export default database;
+export default oracle;
