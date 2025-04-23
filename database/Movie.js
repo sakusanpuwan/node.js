@@ -3,29 +3,32 @@ import { Model } from 'objection';
 // Safer to use static async function instead of arrow functions for class methods as this refers to class not an instance
 // Arrow functions do not bind their own this, so using them as class methods can lead to unexpected behavior
 // and make it difficult to access class properties or methods.
-class Film extends Model{
+class Movie extends Model{
 
     static get tableName() {
-        return 'FILMS';
+        return 'MOVIES';
     };
 
     static get idColumn() {
-        return 'ID';
+        return 'MOVIE_ID';
     }
 
     static get jsonSchema() {
         return {
           type: 'object',
-          required: ['TITLE', 'DURATION', 'RATING'],
+          required: ['MOVIE_NAME', 'RELEASE_DATE', 'MOVIE_DURATION','DIRECTOR','WRITER','PRODUCER','STATUS'],
           properties: {
             id: { type: 'integer' },
-            title: { type: 'string' },
-            release_year: { type: 'integer' },
-            director: { type: 'string' }
+            movie_name: { type: 'string' },
+            release_date: { type: 'string', format: 'date-time' }, // Updated for Oracle DATE
+            director: { type: 'string' },
+            writer: { type: 'string' },
+            producer: { type: 'string' },
+            status: { type: 'string' }
           }
         };
     };
 
 }
 
-export default Film;
+export default Movie;
