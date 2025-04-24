@@ -112,4 +112,26 @@ console.table(shortAndLong);
 const count = await Movie.query().resultSize();
 console.log(`There are ${count} movies in the database`);
 
+const moviesWithReviews = await Movie.query()
+    .join('PUBLIC_RESPONSE', 'MOVIES.MOVIE_ID', 'PUBLIC_RESPONSE.MOVIE_ID')
+    .select('MOVIES.MOVIE_NAME', 'PUBLIC_RESPONSE.TOMATO_METER')
+    .where('PUBLIC_RESPONSE.TOMATO_METER', '>', 80)
+    .orderBy('PUBLIC_RESPONSE.TOMATO_METER', 'desc')
+console.table(moviesWithReviews);
+
+const movieWithCharacters = await Movie.query()
+  .findById(1)
+  .withGraphFetched('characters');
+console.log(movieWithCharacters);
+
+
+const movieWithCharactersJustName = await Movie.query()
+  .findById(1)
+  .withGraphFetched('characters')
+  .modifyGraph('characters', (builder) => {
+    builder.select('CHARACTER_NAME');
+  });
+
+console.log(movieWithCharactersJustName);
+
 knexdb.destroy(); // Close the Knex connection pool when done
