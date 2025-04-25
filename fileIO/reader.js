@@ -18,16 +18,16 @@ export const readFileStream = (filePath) => {
   try {
     const stream = createReadStream(filePath, { encoding: "utf8" });
     stream.on("data", (chunk) => {
-      stream.pause(); // Pause the stream to process the chunk
-      console.table(chunk.split("\n").map((line) => line.split(",")));
-      setTimeout(() => {
-        stream.resume(); // Resume the stream after processing the chunk
-      }, 1000); // Simulate async processing with a timeout
+      console.log(chunk.split("\n").map((line) => line.split(",").map((value) => value.trim())));
+    });
+    stream.on("end", () => {
+      console.log("File reading completed.");
     });
   } catch (error) {
     console.error("Error reading file:", error.message);
+    throw error;
   }
-};
+}; 
 
 
 // -----------------------------------------------------------
