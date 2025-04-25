@@ -18,10 +18,9 @@ class Film extends Model{
           type: 'object',
           required: ['TITLE', 'DURATION', 'RATING'],
           properties: {
-            id: { type: 'integer' },
-            title: { type: 'string' },
-            release_year: { type: 'integer' },
-            director: { type: 'string' }
+            TITLE: { type: 'string' },
+            DURATION: { type: 'integer' },
+            RATING: { type: 'string' }
           }
         };
     };
