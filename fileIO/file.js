@@ -1,6 +1,6 @@
 
 import fs from 'fs';
-import {readFileAsync, readFileStream} from './reader.js';
+import {readFileAsync} from './reader.js';
 import dotenv from 'dotenv';
 import csvParser from 'csv-parser';
 
