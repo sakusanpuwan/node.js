@@ -4,6 +4,7 @@ import { Model } from 'objection';
 import filmService from './filmService.js';
 import Movie from './Movie.js';
 import Film from './Film.js';
+import dotenv from 'dotenv';
 
 // ORACLE DB EXAMPLE
 // ==================
@@ -47,6 +48,12 @@ await oracledb.closeDatabaseConnection();
 // Initialize Knex + Objection.js
 console.log("Knex DB Example");
 Model.knex(knexdb); // Bind the Knex instance to Objection.js
+const result = dotenv.config({path: '../.env'}); // Load environment variables from .env file
+if (result.error) {
+  console.error("⚠️ Could not load .env file", result.error);
+}
+console.log(knexdb.client.config.client);
+console.log('NODE_ENV:', process.env.NODE_ENV);
 
 // READ: Fetch all films using Objection.js
 console.log("Fetching all films using Knex + Objection.js...");

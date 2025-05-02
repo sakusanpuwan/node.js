@@ -6,7 +6,7 @@ jest.mock('../database/Movie.js', () => ({ // mocks the Movie model
 }));
 
 // STEP 2: Import AFTER mocks are in place
-import {getAllMovies} from '../test/movieService.js';
+import {getAllMovies} from './movieService.js';
 import Movie from '../database/Movie.js';
 
 describe('movieService.getAllMovies', () => {
@@ -31,3 +31,6 @@ describe('movieService.getAllMovies', () => {
     expect(result).toEqual(fakeMovies);
   });
 });
+
+// TODO: Try using SQLite for tests - need to install sqlite3 and update knex config.js
+// Use separate env for dev, test, and prod in knexfile.js
