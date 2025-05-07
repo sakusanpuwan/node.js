@@ -31,6 +31,3 @@ describe('movieService.getAllMovies', () => {
     expect(result).toEqual(fakeMovies);
   });
 });
-
-// TODO: Try using SQLite for tests - need to install sqlite3 and update knex config.js
-// Use separate env for dev, test, and prod in knexfile.js
