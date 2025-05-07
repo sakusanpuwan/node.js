@@ -1,0 +1,20 @@
+2025-05-07 11:55:08 [INFO]: The value of PI is 3.14159
+2025-05-07 11:55:08 [INFO]: Environment variable: qwerty
+2025-05-07 11:59:42 [INFO]: The value of PI is 3.14159
+2025-05-07 11:59:42 [INFO]: Environment variable: qwerty
+2025-05-07 11:59:42 [ERROR]: ERROR: This is an error message
+2025-05-07 14:20:46 [INFO]: The value of PI is 3.14159
+2025-05-07 14:20:46 [INFO]: Environment variable: qwerty
+2025-05-07 14:20:46 [ERROR]: ERROR: This is an error message
+2025-05-07 14:22:34 [INFO]: The value of PI is 3.14159
+2025-05-07 14:22:34 [INFO]: Environment variable: qwerty
+2025-05-07 14:22:34 [ERROR]: ERROR: This is an error message
+2025-05-07 14:24:53 [INFO]: The value of PI is 3.14159
+2025-05-07 14:24:53 [INFO]: Environment variable: qwerty
+2025-05-07 14:24:53 [ERROR]: ERROR: This is an error message
+2025-05-07 14:26:41 [INFO]: The value of PI is 3.14159
+2025-05-07 14:26:41 [INFO]: Environment variable: qwerty
+2025-05-07 14:26:41 [ERROR]: ERROR: This is an error message
+2025-05-07 14:27:13 [INFO]: The value of PI is 3.14159
+2025-05-07 14:27:13 [INFO]: Environment variable: qwerty
+2025-05-07 14:27:13 [ERROR]: ERROR: This is an error message
